@@ -65,8 +65,8 @@ nav a:hover {
 /* Logo del juego superpuesto */
 .game-logo {
   position: absolute;
-  top: 20%;
-  left: 28%;
+  top: 15%;
+  left: 24%;
   transform: translate(-50%, -50%);
   width: 650px !important;
   height: auto !important;
