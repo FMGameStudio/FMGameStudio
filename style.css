@@ -1,0 +1,233 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  position: relative;
+  background-color: #000;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 10;
+}
+
+header h1 img {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Navegación */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f39c12;
+}
+
+/* Imagen grande de portada con logo superpuesto */
+.game-cover {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  margin: 30px 0;
+}
+
+.game-cover img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.7);
+}
+
+/* Logo del juego superpuesto */
+.game-logo {
+  position: absolute;
+  top: 20%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  width: 650px !important;
+  height: auto !important;
+  z-index: 2;
+  pointer-events: none;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: #1a1a1a;
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+/* Secciones */
+section {
+  padding: 40px 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+section p,
+section ul {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* Botón */
+.btn {
+  display: inline-block;
+  background: #f39c12;
+  color: #000;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #d35400;
+}
+
+/* Formulario */
+form input,
+form textarea,
+form button {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #f39c12;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #d35400;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Animación fade + slide + zoom suave estilo Rockstar */
+.fade-slide-zoom {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  animation: fadeSlideZoomIn 1.5s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeSlideZoomIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+/* Para enlaces de navegación */
+nav a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #c00; /* rojo */
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #c00;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Para botones con clase .btn */
+.btn {
+  position: relative;
+  display: inline-block;
+  background: #f39c12;
+  color: #000;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #c00; /* rojo */
+  left: 0;
+  bottom: 5px;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  background: #d35400;
+  color: #000;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
