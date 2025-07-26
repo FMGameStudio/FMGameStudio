@@ -273,7 +273,7 @@ nav a:hover::after {
   }
 
   .game-logo {
-    width: 85vw !important;
+    width: 75vw !important;
     top: 28%;
     left: 30%;
     transform: translate(-50%, -50%);
